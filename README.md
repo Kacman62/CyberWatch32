@@ -7,7 +7,10 @@ This project originally started out as a very different project with the same go
 # V2
 The second revision changed to the much more powerful STM32L010K8, which is used in the final board. This version made it all the way to a finished PCB design and right before I exported it for production, I notcied a critical flaw in the power management (dont let ChatGPT read datasheets for you) and I decided that a third revision was needed. 
 
-# The Current Design
+# The Current Design - Power
 The third and final design took a step back from the old project and aimed to do things correctly this time. Starting with a list of features, I wanted more than just a RTC. I specced out a new interital measurement unit and a magnetometer to give me a compass display. The biggest change however came from the power section. The design flaw from V2 comes from a concept known as powerpathing. the system runs on 3.3V, but USB is 5V and the LIPO battery is 3.7V my original design had no way to know what voltage is coming through and the components regulated them both the same, meaning the device would never work off of battery (you also can't just charge the battery with USB and always power off the battery, this is very dangerous and will harm the battery if you charge and discharge at the same time). The current design uses new power componenents to individually protect, charge, and regulate the power to provide a stabel and clean 3.3V all of the time.
 
 ![Image Showing Power Schematic](images/CW32PowerSchematic.png)
+
+# The Current Design - Logic
+Moving to the new sensors I decided on 3. The RV 3032 c7 real time clock. This claims to be the "most accurate clock" and it seemed simple enough with only 8 pins. This was super easy to wire in, includes optional backup power, the only downside is that its a little expensive and hard to find, but avaliable for around $4-5 on DigiKey. The inertial measurement unit is perhaps my favorite part. The chip is the BMI270 from... Bosch? Yeah the same german power tool company also makes semiconductors. Apparently it's mostly for automotive applications, but this sensor seems to be fully designed for wearable watches. Perfect. The only bad part is the documentation. The pinout comes 140 pages into a 150 page reference doc, but at least it gives us some great application advice.
