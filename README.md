@@ -9,4 +9,5 @@ The second revision changed to the much more powerful STM32L010K8, which is used
 
 # The Current Design
 The third and final design took a step back from the old project and aimed to do things correctly this time. Starting with a list of features, I wanted more than just a RTC. I specced out a new interital measurement unit and a magnetometer to give me a compass display. The biggest change however came from the power section. The design flaw from V2 comes from a concept known as powerpathing. the system runs on 3.3V, but USB is 5V and the LIPO battery is 3.7V my original design had no way to know what voltage is coming through and the components regulated them both the same, meaning the device would never work off of battery (you also can't just charge the battery with USB and always power off the battery, this is very dangerous and will harm the battery if you charge and discharge at the same time). The current design uses new power componenents to individually protect, charge, and regulate the power to provide a stabel and clean 3.3V all of the time.
-https://github.com/Kacman62/CyberWatch32/blob/main/images/CW32PowerSchematic.png?raw=true 
+
+![Image Showing Power Schematic](images/CW32PowerSchematic.png)
