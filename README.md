@@ -16,3 +16,14 @@ The third and final design took a step back from the old project and aimed to do
 Moving to the new sensors I decided on 3. The RV 3032 c7 real time clock. This claims to be the "most accurate clock" and it seemed simple enough with only 8 pins. This was super easy to wire in, includes optional backup power, the only downside is that its a little expensive and hard to find, but avaliable for around $4-5 on DigiKey. The inertial measurement unit is perhaps my favorite part. The chip is the BMI270 from... Bosch? Yeah the same german power tool company also makes semiconductors. Apparently it's mostly for automotive applications, but this sensor seems to be fully designed for wearable watches. Perfect. The only bad part is the documentation. The pinout comes 140 pages into a 150 page reference doc, but at least it gives us some great application advice.
 
 ![Image of Bosch datasheet](images/Bosch.png)
+
+The LSM303 chip from STM is used for a magentometer, but also includes a second IMU in order to correct the compass measurements. This one has a couple drop in replacements so the schematic specifies the odler 303c model, but the 303agr is what I bought and the 303ahr should also work. The main differences is swapped I2C addresses, different drives required and higher measurement resolution, but are all pin compatible and share the same footprint.
+
+![Image of logic schematic](images/CW32LogicSchematic)
+
+# Board Design
+After designed the entire board once I was determined to make this board the best possible and take my time so I didn't have to have a 15 day+ delay from ordering and shipping the PCB. The board is sectioned off into power management on the left side, and logic on the bottom right. There are a lot of traces on the board, with all but 6 pins of the MCU being used. in total 140 vias are used and everything just barely manages to fit in 2 layers. There are also cutouts in the top and bottom for a watch strap. 
+
+![image of PCB trace layout](images/CW32BoardDesign.png)
+
+![Image of rendered PCB](images/CW32BoardRender.png)
