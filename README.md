@@ -29,6 +29,6 @@ After designing the entire board once I was determined to make this board the be
 ![Image of rendered PCB](images/CW32BoardRender.png)
 
 # Take Aways
-This was my hardest project I've ever designed, and only my 3rd PCB ordered. This taught me a lot about reading datasheets, good board layout, and proper documentation. I focused a lot on nice to haves, like labeling every component value, putting 5 Debug LEDS, and making a compact circuit board in only 2 layers. This was a lot fo work though so my next project will be simpler. I think I can improve in the future by creating a better and more visual silkscreen.
+This was my hardest project I've ever designed, and only my 3rd PCB ordered. This taught me a lot about reading datasheets, good board layout, and proper documentation. I focused a lot on nice to haves, like labeling every component value, putting 5 Debug LEDS, and making a compact circuit board in only 2 layers. This was a lot of work though so my next project will be simpler. I think I can improve in the future by creating a better and more visual silkscreen.
 
 The board and components are in shipping and have not been received yet. No software has been created yet. Check back in Mid November 2025.
