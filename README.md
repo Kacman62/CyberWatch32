@@ -14,3 +14,5 @@ The third and final design took a step back from the old project and aimed to do
 
 # The Current Design - Logic
 Moving to the new sensors I decided on 3. The RV 3032 c7 real time clock. This claims to be the "most accurate clock" and it seemed simple enough with only 8 pins. This was super easy to wire in, includes optional backup power, the only downside is that its a little expensive and hard to find, but avaliable for around $4-5 on DigiKey. The inertial measurement unit is perhaps my favorite part. The chip is the BMI270 from... Bosch? Yeah the same german power tool company also makes semiconductors. Apparently it's mostly for automotive applications, but this sensor seems to be fully designed for wearable watches. Perfect. The only bad part is the documentation. The pinout comes 140 pages into a 150 page reference doc, but at least it gives us some great application advice.
+
+![Image of Bosch datasheet](images/Bosch.png)
