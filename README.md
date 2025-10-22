@@ -17,9 +17,9 @@ Moving to the new sensors I decided on 3. The RV 3032 c7 real time clock. This c
 
 ![Image of Bosch datasheet](images/Bosch.png)
 
-The LSM303 chip from STM is used for a magentometer, but also includes a second IMU in order to correct the compass measurements. This one has a couple drop in replacements so the schematic specifies the odler 303c model, but the 303agr is what I bought and the 303ahr should also work. The main differences is swapped I2C addresses, different drives required and higher measurement resolution, but are all pin compatible and share the same footprint.
+The LSM303 chip from STM is used for a magentometer, but also includes a second IMU in order to correct the compass measurements. This one has a couple drop in replacements so the schematic specifies the odler 303c model, but the 303agr is what I bought and the 303ahr should also work. The main differences is swapped I2C addresses, different drivers required and higher measurement resolution, but are all pin compatible and share the same footprint.
 
-![Image of logic schematic](images/CW32LogicSchematic)
+![Image of logic schematic](images/CW32LogicSchematic.png)
 
 # Board Design
 After designed the entire board once I was determined to make this board the best possible and take my time so I didn't have to have a 15 day+ delay from ordering and shipping the PCB. The board is sectioned off into power management on the left side, and logic on the bottom right. There are a lot of traces on the board, with all but 6 pins of the MCU being used. in total 140 vias are used and everything just barely manages to fit in 2 layers. There are also cutouts in the top and bottom for a watch strap. 
