@@ -22,7 +22,7 @@ The LSM303 chip from STM is used for a magentometer, but also includes a second 
 ![Image of logic schematic](images/CW32LogicSchematic.png)
 
 # Board Design
-After designed the entire board once I was determined to make this board the best possible and take my time so I didn't have to have a 15 day+ delay from ordering and shipping the PCB. The board is sectioned off into power management on the left side, and logic on the bottom right. There are a lot of traces on the board, with all but 6 pins of the MCU being used. in total 140 vias are used and everything just barely manages to fit in 2 layers. There are also cutouts in the top and bottom for a watch strap. 
+After designing the entire board once I was determined to make this board the best possible and take my time so I didn't have to have a 15 day+ delay from ordering and shipping the PCB. The board is sectioned off into power management on the left side, and logic on the bottom right. There are a lot of traces on the board, with all but 6 pins of the MCU being used. in total 140 vias are used and everything just barely manages to fit in 2 layers. There are also cutouts in the top and bottom for a watch strap. 
 
 ![image of PCB trace layout](images/CW32BoardDesign.png)
 
