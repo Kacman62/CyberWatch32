@@ -4,7 +4,7 @@ A digital watch made with a custom circuit board and the STM32L0. Made to push t
 # The Original Project
 This project originally started out as a very different project with the same goal. I started out with the CH32 Microprocessor, otherwise known as the 10 cent microcontroller. The first draft of this project used a real time clock, a 128px OLED display and the CH32. This would work in theory, but with the very limited RAM of the CH32 I was either going to have to get better at programming, or change the hardware.
 
-# V2
+# Draft 2
 The second revision changed to the much more powerful STM32L010K8, which is used in the final board. This version made it all the way to a finished PCB design and right before I exported it for production, I noticed a critical flaw in the power management (dont let ChatGPT read datasheets for you) and I decided that a third revision was needed. 
 
 ## The Current Design - Power
