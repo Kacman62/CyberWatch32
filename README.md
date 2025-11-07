@@ -33,4 +33,7 @@ This was my hardest project I've ever designed, and only my 3rd PCB made. This t
 
 The board and components are in shipping and have not been received yet. No software has been created yet. Check back in Mid November 2025.
 
+Update 11/7 
+Board and components have arrived the first assembly of just power was a minor fail. The TP6300 chip was smaller than I expected and I put too much solder paste on it bridging some connections and ultiamtely shorting 3.3v to GND. This was just a test though, and the power upstream with the battery charger looks to be working. The charge light works and the it outputs proper voltage to the battery pads. I'll do further tests to see if the downstream power works.
+
 
